@@ -3,7 +3,7 @@ You need Go installed then do
 ```
 make install
 ````
-open in seperate terminals
+open in separate terminals
 ```
 make myapp
 ```
