@@ -1,9 +1,9 @@
 install:
 	go get -u github.com/prometheus/client_golang/prometheus
-	go get github.com/prometheus/prometheus/cmd/...
+	go get -u github.com/prometheus/prometheus/cmd/...
 
 myapp:
-	go build; ./myapp-metrics
+	go build -o myapp; ./myapp
 
 prometheus:
 	prometheus --config.file="myapp-metrics.yml"
